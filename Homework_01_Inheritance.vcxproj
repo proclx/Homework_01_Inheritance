@@ -132,12 +132,14 @@
     <ClCompile Include="FamilyInsurance.cpp" />
     <ClCompile Include="Insurance.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="minMax.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AutoInsurance.h" />
     <ClInclude Include="CorrectReadingFromFile.h" />
     <ClInclude Include="FamilyInsurance.h" />
     <ClInclude Include="Insurance.h" />
+    <ClInclude Include="minMax.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="Insurances.txt" />

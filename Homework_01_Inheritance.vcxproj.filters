@@ -30,6 +30,9 @@
     <ClCompile Include="CorrectReadingFromFile.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="minMax.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Insurance.h">
@@ -42,6 +45,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="CorrectReadingFromFile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="minMax.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

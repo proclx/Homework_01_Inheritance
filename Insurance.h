@@ -14,6 +14,8 @@ public:
 	virtual void ReadFrom(std::istream&) abstract;
 	virtual double GetFullPrice() const abstract;
 
-	bool operator<(const Insurance&);
-	bool operator>(const Insurance&);
+	bool operator<(const Insurance&) const;
+	bool operator>(const Insurance&) const;
+	friend std::ostream& operator<<(std::ostream&, const Insurance&);
+	friend std::istream& operator>>(std::istream&, Insurance&);
 };

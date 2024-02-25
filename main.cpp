@@ -4,6 +4,7 @@
 #include "FamilyInsurance.h"
 #include "AutoInsurance.h"
 #include "CorrectReadingFromFile.h"
+#include "minMax.h"
 
 int main()
 {
@@ -13,17 +14,22 @@ int main()
 	Insurance** allInsurances = CorrectReadingFromFile(fin, size);
 	fin.close();
 
+	std::cout << "File successfully is read\n";
+
 	for (unsigned i = 0; i < size; ++i)
 	{
-		allInsurances[i]->PrintTo(std::cout);
-		std::cout << '\n';
+		std::cout << *allInsurances[i] << '\n';
 	}
 
-	for (int i = 0; i < size; ++i)
+	std::cout << "Max insurance: " << *MaxInsurance(allInsurances, size) << '\n';
+	std::cout << "Min insurance: " << *MinInsurance(allInsurances, size) << '\n';
+
+	for (unsigned i = 0; i < size; ++i)
 	{
 		delete[] allInsurances[i];
 	}
 	delete[] allInsurances;
 
+	std::cout << std::endl;
 	return 0;
 }
