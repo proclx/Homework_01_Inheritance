@@ -1,0 +1,9 @@
+8
+FamilyInsurance: basePrice: 100 familySize: 4 
+FamilyInsurance: basePrice: 250 
+FamilyInsurance: familySize: 2
+FamilyInsurance: 
+AutoInsurance: basePrice: 150 engineVolume: 2
+AutoInsurance: basePrice: 100 
+AutoInsurance: engineVolume: 3
+AutoInsurance: 
